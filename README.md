@@ -17,6 +17,17 @@ growth opportunity.
 | Power BI | Business dashboard |
 
 ## Project Structure
+```
+nova-bank-credit-risk/
+├── data/
+│   ├── raw/                  # Original CSV (32,581 rows × 29 cols)
+│   └── processed/            # Cleaned CSV (32,576 rows × 38 cols)
+├── sql/                      # 5 SQL scripts (DDL → Load → QA → Clean → Export)
+├── notebooks/                # nova_bank_eda.ipynb — full EDA + modeling
+├── powerbi/                  # Dashboard (coming soon)
+└── docs/                     # Issue Tree, Preprocessing Checklist, Roadmap
+```
+
 ## Key Findings
 
 1. **LPI and DTI are the strongest predictors** (IV = 0.71, 0.50) and
